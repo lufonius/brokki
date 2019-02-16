@@ -1,4 +1,4 @@
-import {ActionReducerMap, createFeatureSelector} from "@ngrx/store";
+import {ActionReducerMap, createFeatureSelector} from '@ngrx/store';
 
 import * as fromPermission from './permission/permission.reducer';
 import * as fromUser from './user/user.reducer';
@@ -25,7 +25,9 @@ export const reducers: ActionReducerMap<State> = {
   userRole: fromUserRole.reducer
 };
 
-export const selectUserManagementState = createFeatureSelector<State>('user-management');
+export const selectUserManagementState = createFeatureSelector<State>(
+  'user-management'
+);
 
 export const {
   selectAll: selectAllPermission,

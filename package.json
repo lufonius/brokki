@@ -8,11 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettify": "prettier --single-quote --print -width=120 */*ts",
-    "husky": {
-      "hooks": {
-        "pre-commit": "yarn lint"
-      }
+    "prettify-all": "prettier --single-quote --arrow-parens always --no-bracket-spacing --print --write '**/*.ts'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettify-all && yarn lint"
     }
   },
   "private": true,
@@ -55,7 +55,6 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
-    "onchange": "^5.2.0",
     "prettier": "1.16.4",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",

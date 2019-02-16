@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CommonComponent } from './common.component';
+import {CommonComponent} from './common.component';
 
 describe('CommonComponent', () => {
   let component: CommonComponent;
@@ -8,9 +8,8 @@ describe('CommonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CommonComponent ]
-    })
-    .compileComponents();
+      declarations: [CommonComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

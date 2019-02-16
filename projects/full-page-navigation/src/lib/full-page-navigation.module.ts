@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { FullPageNavigationComponent } from './full-page-navigation.component';
+import {NgModule} from '@angular/core';
+import {FullPageNavigationComponent} from './full-page-navigation.component';
 
 @NgModule({
   declarations: [FullPageNavigationComponent],
-  imports: [
-  ],
+  imports: [],
   exports: [FullPageNavigationComponent]
 })
-export class FullPageNavigationModule { }
+export class FullPageNavigationModule {}

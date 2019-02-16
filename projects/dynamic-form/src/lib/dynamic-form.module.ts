@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { DynamicFormComponent } from './dynamic-form.component';
+import {NgModule} from '@angular/core';
+import {DynamicFormComponent} from './dynamic-form.component';
 
 @NgModule({
   declarations: [DynamicFormComponent],
-  imports: [
-  ],
+  imports: [],
   exports: [DynamicFormComponent]
 })
-export class DynamicFormModule { }
+export class DynamicFormModule {}

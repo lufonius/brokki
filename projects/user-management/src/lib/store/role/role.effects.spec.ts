@@ -1,8 +1,8 @@
-import { TestBed, inject } from '@angular/core/testing';
-import { provideMockActions } from '@ngrx/effects/testing';
-import { Observable } from 'rxjs';
+import {TestBed, inject} from '@angular/core/testing';
+import {provideMockActions} from '@ngrx/effects/testing';
+import {Observable} from 'rxjs';
 
-import { RoleEffects } from './role.effects';
+import {RoleEffects} from './role.effects';
 
 describe('RoleEffects', () => {
   let actions$: Observable<any>;
@@ -10,10 +10,7 @@ describe('RoleEffects', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [
-        RoleEffects,
-        provideMockActions(() => actions$)
-      ]
+      providers: [RoleEffects, provideMockActions(() => actions$)]
     });
 
     effects = TestBed.get(RoleEffects);

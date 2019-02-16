@@ -1,4 +1,4 @@
-import { reducer, initialState } from './role-permission.reducer';
+import {reducer, initialState} from './role-permission.reducer';
 
 describe('RolePermission Reducer', () => {
   describe('unknown action', () => {

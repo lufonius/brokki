@@ -1,12 +1,14 @@
-import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
-import { Permission } from '../../../../../core/src/lib/model/user-management/permission.model';
-import { PermissionActions, PermissionActionTypes } from './permission.actions';
+import {EntityState, EntityAdapter, createEntityAdapter} from '@ngrx/entity';
+import {Permission} from '../../../../../core/src/lib/model/user-management/permission.model';
+import {PermissionActions, PermissionActionTypes} from './permission.actions';
 
 export interface State extends EntityState<Permission> {
   // additional entities state properties
 }
 
-export const adapter: EntityAdapter<Permission> = createEntityAdapter<Permission>();
+export const adapter: EntityAdapter<Permission> = createEntityAdapter<
+  Permission
+>();
 
 export const initialState: State = adapter.getInitialState({
   // additional entity state properties
@@ -67,5 +69,5 @@ export const {
   selectIds,
   selectEntities,
   selectAll,
-  selectTotal,
+  selectTotal
 } = adapter.getSelectors();

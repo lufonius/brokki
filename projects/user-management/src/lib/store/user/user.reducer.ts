@@ -1,6 +1,6 @@
-import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
-import { User } from '../../../../../core/src/lib/model/user-management/user.model';
-import { UserActions, UserActionTypes } from './user.actions';
+import {EntityState, EntityAdapter, createEntityAdapter} from '@ngrx/entity';
+import {User} from '../../../../../core/src/lib/model/user-management/user.model';
+import {UserActions, UserActionTypes} from './user.actions';
 
 export interface State extends EntityState<User> {
   // additional entities state properties
@@ -12,10 +12,7 @@ export const initialState: State = adapter.getInitialState({
   // additional entity state properties
 });
 
-export function reducer(
-  state = initialState,
-  action: UserActions
-): State {
+export function reducer(state = initialState, action: UserActions): State {
   switch (action.type) {
     case UserActionTypes.AddUser: {
       return adapter.addOne(action.payload.user, state);
@@ -67,5 +64,5 @@ export const {
   selectIds,
   selectEntities,
   selectAll,
-  selectTotal,
+  selectTotal
 } = adapter.getSelectors();

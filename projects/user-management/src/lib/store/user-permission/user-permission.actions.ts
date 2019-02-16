@@ -1,6 +1,6 @@
-import { Action } from '@ngrx/store';
-import { Update } from '@ngrx/entity';
-import { UserPermission } from '../../../../../core/src/lib/model/user-management/user-permission.model';
+import {Action} from '@ngrx/store';
+import {Update} from '@ngrx/entity';
+import {UserPermission} from '../../../../../core/src/lib/model/user-management/user-permission.model';
 
 export enum UserPermissionActionTypes {
   LoadUserPermissions = '[UserPermission] Load UserPermissions',
@@ -18,55 +18,55 @@ export enum UserPermissionActionTypes {
 export class LoadUserPermissions implements Action {
   readonly type = UserPermissionActionTypes.LoadUserPermissions;
 
-  constructor(public payload: { userPermissions: UserPermission[] }) {}
+  constructor(public payload: {userPermissions: UserPermission[]}) {}
 }
 
 export class AddUserPermission implements Action {
   readonly type = UserPermissionActionTypes.AddUserPermission;
 
-  constructor(public payload: { userPermission: UserPermission }) {}
+  constructor(public payload: {userPermission: UserPermission}) {}
 }
 
 export class UpsertUserPermission implements Action {
   readonly type = UserPermissionActionTypes.UpsertUserPermission;
 
-  constructor(public payload: { userPermission: UserPermission }) {}
+  constructor(public payload: {userPermission: UserPermission}) {}
 }
 
 export class AddUserPermissions implements Action {
   readonly type = UserPermissionActionTypes.AddUserPermissions;
 
-  constructor(public payload: { userPermissions: UserPermission[] }) {}
+  constructor(public payload: {userPermissions: UserPermission[]}) {}
 }
 
 export class UpsertUserPermissions implements Action {
   readonly type = UserPermissionActionTypes.UpsertUserPermissions;
 
-  constructor(public payload: { userPermissions: UserPermission[] }) {}
+  constructor(public payload: {userPermissions: UserPermission[]}) {}
 }
 
 export class UpdateUserPermission implements Action {
   readonly type = UserPermissionActionTypes.UpdateUserPermission;
 
-  constructor(public payload: { userPermission: Update<UserPermission> }) {}
+  constructor(public payload: {userPermission: Update<UserPermission>}) {}
 }
 
 export class UpdateUserPermissions implements Action {
   readonly type = UserPermissionActionTypes.UpdateUserPermissions;
 
-  constructor(public payload: { userPermissions: Update<UserPermission>[] }) {}
+  constructor(public payload: {userPermissions: Update<UserPermission>[]}) {}
 }
 
 export class DeleteUserPermission implements Action {
   readonly type = UserPermissionActionTypes.DeleteUserPermission;
 
-  constructor(public payload: { id: string }) {}
+  constructor(public payload: {id: string}) {}
 }
 
 export class DeleteUserPermissions implements Action {
   readonly type = UserPermissionActionTypes.DeleteUserPermissions;
 
-  constructor(public payload: { ids: string[] }) {}
+  constructor(public payload: {ids: string[]}) {}
 }
 
 export class ClearUserPermissions implements Action {
@@ -74,13 +74,13 @@ export class ClearUserPermissions implements Action {
 }
 
 export type UserPermissionActions =
- LoadUserPermissions
- | AddUserPermission
- | UpsertUserPermission
- | AddUserPermissions
- | UpsertUserPermissions
- | UpdateUserPermission
- | UpdateUserPermissions
- | DeleteUserPermission
- | DeleteUserPermissions
- | ClearUserPermissions;
+  | LoadUserPermissions
+  | AddUserPermission
+  | UpsertUserPermission
+  | AddUserPermissions
+  | UpsertUserPermissions
+  | UpdateUserPermission
+  | UpdateUserPermissions
+  | DeleteUserPermission
+  | DeleteUserPermissions
+  | ClearUserPermissions;

@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { DynamicFormService } from './dynamic-form.service';
+import {DynamicFormService} from './dynamic-form.service';
 
 describe('DynamicFormService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

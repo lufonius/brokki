@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { NotificationsComponent } from './notifications.component';
+import {NgModule} from '@angular/core';
+import {NotificationsComponent} from './notifications.component';
 
 @NgModule({
   declarations: [NotificationsComponent],
-  imports: [
-  ],
+  imports: [],
   exports: [NotificationsComponent]
 })
-export class NotificationsModule { }
+export class NotificationsModule {}

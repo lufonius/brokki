@@ -1,5 +1,5 @@
-import {User} from "./user.model";
-import {Permission} from "./permission.model";
+import {User} from './user.model';
+import {Permission} from './permission.model';
 
 export interface Role {
   id: string;

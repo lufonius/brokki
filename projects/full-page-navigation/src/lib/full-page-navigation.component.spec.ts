@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FullPageNavigationComponent } from './full-page-navigation.component';
+import {FullPageNavigationComponent} from './full-page-navigation.component';
 
 describe('FullPageNavigationComponent', () => {
   let component: FullPageNavigationComponent;
@@ -8,9 +8,8 @@ describe('FullPageNavigationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FullPageNavigationComponent ]
-    })
-    .compileComponents();
+      declarations: [FullPageNavigationComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
