@@ -37,7 +37,12 @@ export class UserManagementModule {
   imports: [
     UserManagementStoreModule
   ],
-  exports: []
+  exports: [
+
+  ]
 })
 class RootUserManagementModule {
+
+
+
 }
