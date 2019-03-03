@@ -6,9 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "ng lint user-management && ng lint core",
     "e2e": "ng e2e",
-    "prettify-all": "prettier --single-quote --arrow-parens always --no-bracket-spacing --print --write '**/*.ts'"
+    "prettify-core": "prettier --single-quote --arrow-parens always --no-bracket-spacing --print --write '**/projects/core/**/*.ts'",
+    "prettify-user-management": "prettier --single-quote --arrow-parens always --no-bracket-spacing --print --write '**/projects/user-management/**/*.ts'",
+    "prettify-all": "yarn prettify-core && yarn prettify-user-management"
   },
   "husky": {
     "hooks": {

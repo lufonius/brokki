@@ -19,53 +19,59 @@
       "dom"
     ],
     "paths": {
-      "user-management": [
-        "dist/user-management"
+      "@brokki/user-management": [
+        "projects/user-management"
       ],
-      "user-management/*": [
-        "dist/user-management/*"
+      "@brokki/user-management/*": [
+        "projects/user-management/*"
       ],
-      "error": [
-        "dist/error"
+      "@brokki/error": [
+        "projects/error"
       ],
-      "error/*": [
-        "dist/error/*"
+      "@brokki/error/*": [
+        "projects/error/*"
       ],
-      "notifications": [
-        "dist/notifications"
+      "@brokki/notifications": [
+        "projects/notifications"
       ],
-      "notifications/*": [
-        "dist/notifications/*"
+      "@brokki/notifications/*": [
+        "projects/notifications/*"
       ],
-      "grid": [
-        "dist/grid"
+      "@brokki/grid": [
+        "projects/grid"
       ],
-      "grid/*": [
-        "dist/grid/*"
+      "@brokki/grid/*": [
+        "projects/grid/*"
       ],
-      "dynamic-form": [
-        "dist/dynamic-form"
+      "@brokki/dynamic-form": [
+        "projects/dynamic-form"
       ],
-      "dynamic-form/*": [
-        "dist/dynamic-form/*"
+      "@brokki/dynamic-form/*": [
+        "projects/dynamic-form/*"
       ],
-      "full-page-navigation": [
-        "dist/full-page-navigation"
+      "@brokki/full-page-navigation": [
+        "projects/full-page-navigation"
       ],
-      "full-page-navigation/*": [
-        "dist/full-page-navigation/*"
+      "@brokki/full-page-navigation/*": [
+        "projects/full-page-navigation/*"
       ],
-      "core": [
-        "dist/core"
+      "@brokki/core": [
+        "projects/core"
       ],
-      "core/*": [
-        "dist/core/*"
+      "@brokki/core/*": [
+        "projects/core/*"
       ],
-      "common": [
-        "dist/common"
+      "@brokki/common": [
+        "projects/common"
       ],
-      "common/*": [
-        "dist/common/*"
+      "@brokki/common/*": [
+        "projects/common/*"
+      ],
+      "schematics": [
+        "dist/schematics"
+      ],
+      "schematics/*": [
+        "dist/schematics/*"
       ]
     }
   }
